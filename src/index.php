@@ -1,6 +1,6 @@
 <?php
 
-include "database/db.php";
+require_once __DIR__ . '/../database/db.php';
 
 ?>
 
@@ -14,7 +14,8 @@ include "database/db.php";
   </head>
   <body>
 
-  <?php include ('view/navbar.php'); ?>
+  <?php include ('navbar.php'); ?>
+  
   <div class="container mt-4">
     <div class="row">
       <div class="col-md-12">

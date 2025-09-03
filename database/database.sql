@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS usuarios;
+USE usuarios;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL,
+    data_nascimento DATE  DEFAULT NULL
+);
+
